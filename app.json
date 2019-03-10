@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/propell/propell",
+    "pages/loveletter/loveletter",
+    "pages/save/save",
+    "pages/our/our",
+    "pages/write/write",
+    "pages/wallpaper/wallpaper",
+    "pages/goal/goal",
+    "pages/edit/edit",
+    "pages/time/time",
+    "pages/editwish/editwish",
+    "pages/wishbox/wishbox",
+    "pages/feedback/feedback",
+    "pages/modifyinfo/modifyinfo",
+    "pages/calendar/calendar",
+    "pages/lovebox/lovebox",
+    "pages/lovedetail/lovedetail",
+    "pages/timedetail/timedetail"  
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TouchU",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#a5794c",
+    "backgroundColor": "#E9C0C6",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "imgs/home.png",
+        "selectedIconPath": "imgs/home.png"
+      },
+      {
+        "pagePath": "pages/time/time",
+        "text": "时光机",
+        "iconPath": "imgs/time.png",
+        "selectedIconPath": "imgs/time.png"
+      },
+      {
+        "pagePath": "pages/propell/propell",
+        "text": "推送",
+        "iconPath": "imgs/propell.png",
+        "selectedIconPath": "imgs/propell.png"
+      },
+      {
+        "pagePath": "pages/our/our",
+        "text": "我们",
+        "iconPath": "imgs/our.png",
+        "selectedIconPath": "imgs/our.png"
+      }
+    ]
+  },
+  "plugins": {
+    "calendar": {
+      "version": "1.1.2",
+      "provider": "wx92c68dae5a8bb046"
+    }
+  }
+}

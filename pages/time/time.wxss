@@ -1,0 +1,255 @@
+.container{
+  width:100%;
+  height: 100%;
+  position: relative;
+}
+.avatars{
+  position: absolute;
+  top:40rpx;
+  left: 50rpx;
+}
+
+.avatars image{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+.user-avatar{
+  display: inline-block;
+  position: relative;
+  right: 20rpx;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  overflow:hidden;
+}
+.avatars image:nth-of-type(2){
+  position: relative;
+  right: 20rpx;
+}
+
+.horizontal-line{
+  position: absolute;
+  top:200rpx;
+  display: block;
+  width: 100%;
+  height: 6rpx;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+ .time-axis{
+  position: relative;
+  top:206rpx;
+  width: 100%;
+} 
+
+.time-axis-item{
+  position: relative;
+  width: 100%;
+  height: 320rpx;
+}
+.vertical-line{
+  position: absolute;
+  left: 165rpx;
+  display: block;
+  width: 6rpx;
+  height: 320rpx;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.circle-one{
+  border-radius:50%;
+  background-color: rgba(255, 255, 255, .9)
+}
+.circle-two{
+  border-radius:50%;
+  background-color: rgba(255, 255, 255, .5)
+}
+.circle-one-li1{
+  position: absolute;
+  top:125rpx;
+  left: 134rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.circle-two-li1{
+  position: absolute;
+  top:104rpx;
+  left: 115rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.circle-one-li2{
+  position: absolute;
+  top:126rpx;
+  left: 142rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.circle-two-li2{
+  position: absolute;
+  top:107rpx;
+  left: 122rpx;
+  width: 90rpx;
+  height: 90rpx;
+}
+.circle-one-li3{
+  position: absolute;
+  top:130rpx;
+  left: 147rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.circle-two-li3{
+  position: absolute;
+  top:111rpx;
+  left: 126rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.circle-one-li4{
+  position: absolute;
+  top:142rpx;
+  left: 151rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.circle-two-li4{
+  position: absolute;
+  top:122rpx;
+  left: 131rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+.circle-one-li5{
+  position: absolute;
+  top:150rpx;
+  left: 156rpx;
+  width: 20rpx;
+  height: 20rpx;
+}
+.circle-two-li5{
+  position: absolute;
+  top:130rpx;
+  left: 136rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+text{
+  color: #FFF;
+}
+.moretext{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 44rpx;
+  top:26rpx;
+}
+.moretext text{
+  text-align: center;
+}
+#year{
+  font-size: 30rpx;
+}
+#month{
+  font-size: 60rpx;
+  font-weight: bolder;
+}
+#sentence{
+  font-size: 28rpx;
+}
+
+.content text{
+  font-size: 30rpx;
+  color: white;
+  text-indent: 20rpx;
+}
+
+.text1{
+  display: -webkit-box;
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+.text2{
+  display: -webkit-box;
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.text3{
+   display: -webkit-box;
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.time-axis-item>text{
+  position: absolute;
+  top:130rpx;
+  left:20rpx;
+}
+.content{
+background-color:rgba(255, 255, 255, .4);
+border-radius:20rpx;
+padding: 20rpx;
+}
+.list-li1{
+  width:380rpx;
+  height:200rpx;
+}
+
+.list-li2{
+  width:350rpx;
+  height:180rpx;
+}
+.list-li3{
+  width:320rpx;
+  height: 160rpx;
+}
+.list-li4{
+  width:290rpx;
+  height: 140rpx;
+}
+.list-li5{
+  width: 270rpx;
+  height: 130rpx;
+  margin-top: 20rpx;
+}
+.add-btn{
+  width:60rpx;
+  height:60rpx;
+  position:fixed;
+  bottom:40rpx;
+  right:20rpx;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  background-color:transparent;
+  border:4rpx solid #bbd2ff;
+  border-radius:50%;
+  padding:36rpx;
+  font-size:60rpx;
+  font-weight:bolder;
+  color:#74a9ff;
+}
+button::after{
+  border: none;
+}
+
+.triangle-left{
+  display:block;
+  width:0;
+  height:0;
+  border-right:35rpx solid rgba(255, 255, 255, .4);
+  border-top:15rpx solid transparent;
+  border-bottom:15rpx solid transparent;
+  align-self: center;
+}
+.flex-layout{
+  display: flex;
+  position:absolute;
+  right:40rpx;
+  top:58rpx;
+  width:450rpx;
+  height:200rpx;
+}

@@ -1,0 +1,17 @@
+<!--pages/editwish/editwish.wxml-->
+<view>
+  <view class='topbar'>
+    <text catchtap='redirectToWishBox'>取消</text>
+    <text catchtap='redirectToWishBoxWithData'>发送</text>
+  </view>
+  <view id='edit-content'>
+    <textarea auto-focus auto-height bindinput='getInputValue' maxlength='-1' placeholder="快来写下你的心愿呀"></textarea>
+    <view class='imgs-layout'>
+        <image src='{{imgSrc}}'mode="widthFix"></image>
+    </view>
+    </view>
+  <hr/>
+  <view class='bottom-add-bar'>
+    <button catchtap='uploadImgs'>+</button>
+  </view>
+</view>

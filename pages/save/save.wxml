@@ -1,0 +1,36 @@
+<!--pages/save/save.wxml-->
+<view id='container'>
+  <image class="background" src="{{bgImgSrc}}"></image>
+  <view wx:if="{{isSetGoalShow}}" id='set-goal-wrapper'>
+    <!-- <button catchtap='backToHome'>
+      <image src="../../imgs/back.png"></image>
+    </button> -->
+    <button catchtap='navigateToGoal'>
+      <image src='../../imgs/add.png'></image>
+    </button>
+    <text>设置目标</text>
+  </view>
+
+  <view wx:if='{{isGoalContentShow}}' id='goal-content-wrapper'>
+    <!-- <button catchtap='backToHome'>
+      <image src="../../imgs/back.png"></image>
+    </button> -->
+    <view class='save-Amount font'>
+      <text>每周存入(元)</text>
+      <text>{{saveAmount}}</text>
+    </view>
+    <view id='goal-amount' class='font'>
+      <text>目标金额(元)</text>
+      <text catchtap='navigateToGoal'>{{goalAmount}}</text>
+    </view>
+    <view class='achieve-time font'>
+      <text>完成时间</text>
+      <text>{{achieveYear}}.{{achieveMonth}}.{{achieveDay}}</text>
+    </view>
+  </view>
+  <!-- <view id="goal-achievement-wrapper"></view> -->
+  <view id='encourage-wrapper'>
+    <image src='{{imgSrc}}'></image>
+    <text>{{encourageText}}</text>
+  </view>
+</view>

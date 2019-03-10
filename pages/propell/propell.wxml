@@ -1,0 +1,52 @@
+<view class='container'>
+  <image class="background" src="{{bgImgSrc}}"></image>
+  <view class='all-push'>
+    <button catchtap='showHideCategories'>
+      <text>全部推送</text>
+      <image src='{{arrowSrc}}'></image>
+    </button>
+    <!-- <text>∨</text> -->
+  </view>
+  <view class='push-categories' hidden='{{isHide}}'>
+    <button>电影</button>
+    <button>电视剧</button>
+    <button>音乐</button>
+    <button>读物</button>
+    <button>美食</button>
+    <button>旅游</button>
+    <button>购物</button>
+  </view>
+  <!-- <block wx:for="{{push}}" wx:for-item="i">
+    <view class='push'>
+      <view class='push-item'>
+        <text>{{i.text}}</text>
+        <view class='images-layout'>
+          <view wx:for="{{i.imgArray}}" wx:for-item="j">
+            <image src='{{j}}'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block> -->
+  <block>
+    <view id="push-wrapper">
+      <view class='push-item-wrapper'>
+        <view class='figure' style='background-image:url(https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1973379676.jpg)'></view>
+        <view class='push-item'>
+          <view id="poster"> 
+            <image src="../../imgs/YY.jpg"></image>
+          </view>
+          <view id="more-info">
+            <p>厕所英雄</p>
+            <p>评分:8.5</p>
+            <view class='bottom'>
+              <text>剧情、爱情</text>
+              <text>印度/150分钟</text>
+              <text>上映时间：2018-06-08</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

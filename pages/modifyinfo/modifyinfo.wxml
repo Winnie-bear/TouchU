@@ -1,0 +1,11 @@
+<!--pages/modifyinfo/modifyinfo.wxml-->
+<view id="container" catchtap='hideInput'>
+  <image class="background" src="../../imgs/userbg.png" catchtap='hideInput'></image>
+  <view class='avatar'>
+    <image src='{{userSrc}}' catchtap='modifyImg'></image>
+  </view>
+  <view class='user-name'>
+    <text catchtap='modifyName'>{{userName}}</text>
+    <input hidden='{{isHide}}' bindconfirm='getValue' catchtap='showInput'></input>
+  </view>
+</view>

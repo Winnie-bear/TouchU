@@ -1,0 +1,30 @@
+<!--pages/lovebox/lovebox.wxml-->
+<view id="love-box-wrapper">
+  <image class="background" src="{{bgImgSrc}}"></image>
+  <view class='back'>
+    <image src="../../imgs/back.png" catchtap='backToLoveLetter'></image>
+  </view>
+  <view id="receive">
+    <view class='top'>
+      <image src='../../imgs/mail.png'></image>
+      <text>已收到</text>
+    </view>
+    <view class='item-wrapper'>
+      <block wx:for="{{arrRecevie}}" wx:for-item="i">
+        <view class='item'>{{i}}</view>
+      </block>
+    </view>
+  </view>
+  <span class="divide-line"></span>
+  <view id="send">
+    <view class='top'>
+      <image src='../../imgs/send.png'></image>
+      <text>已发送</text>
+    </view>
+    <view class='item-wrapper'>
+      <block wx:for="{{arrSend}}" wx:for-item="j">
+        <view class='item' catchtap='showDetail' data-content="{{j}}">{{j}}</view>
+      </block>
+    </view>
+  </view>
+</view>

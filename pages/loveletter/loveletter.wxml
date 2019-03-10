@@ -1,0 +1,12 @@
+<!--pages/loveletter/loveletter.wxml-->
+<view class='container'>
+  <image class="background" src="{{bgImgSrc}}"></image>
+  <button catchtap='redirectToWrite'>
+    <image src='../../imgs/writelove.png'></image>
+    <text>写爱</text>
+  </button>
+  <button catchtap='navigateToLoveBox'>
+    <image src='../../imgs/lovebox.png'></image>
+    <text>收爱箱</text>
+  </button>
+</view>

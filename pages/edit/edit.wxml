@@ -1,0 +1,28 @@
+<!--pages/edit/edit.wxml-->
+<view>
+  <view class='topbar'>
+    <text catchtap='switchToTime'>取消</text>
+    <text catchtap='switchToTimeWithData'>发送</text>
+  </view>
+  <view id='edit-content'>
+    <textarea auto-height auto-focus bindinput='getInputValue' maxlength='-1'></textarea>
+    <camera device-position="front" flash="off" binderror="error" bindtap="takePhoto" hidden='{{isCameraHide}}'></camera>
+    <image wx:if='{{imageSrc}}' src='{{imageSrc}}' class='img-show' catchtap='showCamera'></image>
+    <view class='imgs-layout'>
+      <view class="imgs" wx:for="{{arrImgs}}" wx:for-item="imgSrc">
+        <image src='{{imgSrc}}' mode='widthFix'></image>
+      </view>
+    </view>
+    <view class='location' catchtap='getLocation'>
+      <image src='../../imgs/location.png'></image>
+      <text>{{locationText}}</text>
+    </view>
+  </view>
+  <hr/>
+  <view class='bottom-add-bar'>
+    <button catchtap='showCameraModal'>
+      <image src="../../imgs/camera.png"></image>
+    </button>
+    <button catchtap='uploadImgs'>+</button>
+  </view>
+</view>

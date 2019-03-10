@@ -1,0 +1,68 @@
+/* pages/lovebox/lovebox.wxss */
+#love-box-wrapper{
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#receive,#send{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 90rpx;
+}
+.top{
+  display: inline-flex;
+  align-items: center;
+}
+.top image{
+  width: 76rpx;
+  height: 76rpx;
+}
+.top text{
+  font-size: 30rpx;
+  color: #A5794C;
+  margin-left: 20rpx;
+}
+.divide-line{
+  width: 6rpx;
+  height: 1000rpx;
+  background-color: rgba(255, 255, 255, .3);
+  margin-top: 80rpx;
+}
+.item{
+  width: 268rpx;
+  height: 178rpx;
+  background-color: rgba(255, 255, 255, .3);
+  color: #B28A68;
+  font-size: 28rpx;
+  border-radius: 16rpx;
+  padding: 22rpx;
+  margin-bottom: 30rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; 
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  overflow: hidden; 
+  line-height: 40rpx; 
+  text-indent: 56rpx;
+}
+.back{
+  position: absolute;
+  left: 40rpx;
+  top: 20rpx;
+}
+.back image{
+  width:46rpx;
+  height: 28rpx;
+}
+.item-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40rpx;
+}

@@ -1,0 +1,10 @@
+<!--pages/feedback/feedback.wxml-->
+<view>
+  <view class='topbar'>
+    <text catchtap='switchToOur'>取消</text>
+    <text catchtap='successToOur'>发送</text>
+  </view>
+  <view id="text-wrapper">
+    <textarea auto-height maxlength="-1" placeholder="请在这里输入您宝贵的意见哦"></textarea>
+  </view>
+</view>

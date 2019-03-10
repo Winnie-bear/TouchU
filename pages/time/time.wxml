@@ -1,0 +1,89 @@
+<view class='container'>
+  <image class="background" src="{{bgImgSrc}}"></image>
+  <view class="avatars">
+    <image src='{{maleAvatar}}' catchtap='changeAvatar'></image>
+    <!-- <view class='user-avatar'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view> -->
+     <image src='{{femaleAvatar}}' catchtap='changeAvatar'></image> 
+  </view>
+  <span class="horizontal-line"></span>
+  <view class="moretext">
+    <text id="year">{{year}}</text>
+    <text id="month">{{EMonth}}</text>
+    <text id="sentence">{{CNMonth}}月，与你共度</text>
+  </view>
+  <block wx:for="{{dailyEvents}}" wx:key="imgsrc" wx:if="{{item.content}}">
+    <view wx:if="{{index==0}}" class="time-axis">
+      <view class="time-axis-item">
+        <span class="vertical-line"></span>
+        <text>{{item.time}}</text>
+        <span class="circle-one circle-one-li1"></span>
+        <span class="circle-two circle-two-li1"></span>
+        <view class='flex-layout'>
+          <span class="triangle-left"></span>
+          <view class="content list-li1">
+            <text class='text1'>{{item.content}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:elif="{{index==1}}" class="time-axis">
+      <view class="time-axis-item">
+        <span class="vertical-line"></span>
+        <text>{{item.time}}</text>
+        <span class="circle-one  circle-one-li2"></span>
+        <span class="circle-two  circle-two-li2"></span>
+        <view class='flex-layout'>
+          <span class="triangle-left"></span>
+          <view class="content list-li2">
+            <text class='text2'>{{item.content}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:elif="{{index==2}}" class="time-axis">
+      <view class="time-axis-item">
+        <span class="vertical-line"></span>
+        <text>{{item.time}}</text>
+        <span class="circle-one  circle-one-li3"></span>
+        <span class="circle-two  circle-two-li3"></span>
+        <view class='flex-layout'>
+          <span class="triangle-left"></span>
+          <view class="content list-li3">
+            <text class='text2'>{{item.content}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:elif="{{index==3}}" class="time-axis">
+      <view class="time-axis-item">
+        <span class="vertical-line"></span>
+        <text>{{item.time}}</text>
+        <span class="circle-one  circle-one-li4"></span>
+        <span class="circle-two  circle-two-li4"></span>
+        <view class='flex-layout'>
+          <span class="triangle-left"></span>
+          <view class="content list-li4">
+            <text class='text3'>{{item.content}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:else class="time-axis">
+      <view class="time-axis-item">
+        <span class="vertical-line"></span>
+        <text>{{item.time}}</text>
+        <span class="circle-one  circle-one-li5"></span>
+        <span class="circle-two  circle-two-li5"></span>
+        <view class='flex-layout'>
+          <span class="triangle-left"></span>
+          <view class="content list-li5">
+            <text class='text3'>{{item.content}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <button class='add-btn' catchtap='redirectToEdit'>+</button>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/calendar/calendar.wxml-->
+<view class='container'>
+  <image class="background" src="{{bgImgSrc}}"></image>
+  <calendar calendar-style="calendar" days-color="{{days_style}}" binddayClick="dayClick" weeks-type="cn"/>
+  <view class='time'>
+    <text>已携手走过</text>
+    <text class='day-num'>{{togetherDays}}</text>
+    <text>天</text>
+  </view>
+  <view class='time'>
+    <text>指尖情动</text>
+    <text class='day-num'>{{fingerDays}}</text>
+    <text>天</text>
+  </view>
+  <view class='sentence'>
+    <text>{{sentenceFir}}</text>
+    <image src='../../imgs/pinklove.png'></image>
+    <text>{{sentenceSec}}</text>
+  </view>
+</view>

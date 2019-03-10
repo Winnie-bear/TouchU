@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="background" src="{{bgImgSrc}}" ></image>
+  <view id="wrapper">
+    <view id="row-one" class='row'>
+      <button catchtap='navigateToWishBox'>
+        <image src='../../imgs/wishbox.png'></image>
+        <text>心愿盒</text>
+      </button>
+      <button catchtap='changeWallPaper'>
+        <image src='../../imgs/wallpaper.png'></image>
+        <text>壁纸</text>
+      </button>
+    </view>
+    <view id="row-two" class='row'> 
+      <button catchtap='navigateToSave'>
+        <image src='../../imgs/fund.png'></image>
+        <text>基金</text>
+      </button>
+      <button catchtap='navigateTLoveLetter'>
+        <image src='../../imgs/loveletter.png'></image>
+        <text>情书</text>
+      </button>
+    </view>
+    <view id="row-three" class='row'>
+      <button>
+        <image src='../../imgs/finger.png'></image>
+        <text>指尖情动</text>
+      </button>
+       <button>
+        <image src="../../imgs/love.png" class="love"></image>
+        <text>{{loginDay}}</text>
+      </button>
+    </view>
+  </view>
+</view>

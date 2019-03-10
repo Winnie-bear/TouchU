@@ -1,0 +1,40 @@
+<view class='container'>
+  <image class="background" src="{{bgImgSrc}}"></image>
+  <view class='top-avatars-bar'>
+    <view class='avatar-left'>
+      <image src='{{maleAvatar}}'></image>
+      <text>{{maleName}}</text>
+    </view>
+    <image src='../../imgs/graylove.png'></image>
+    <view class='avatar-right'>
+      <image src='{{femaleAvatar}}' catchtap='navigateToModify'></image>
+      <text>{{femaleName}}</text>
+    </view>
+  </view>
+  <view class='moreinfo'>
+    <view class='moreinfo-item' catchtap='navigateToModify'>
+      <image src='../../imgs/userinfo.png'></image>
+      <text>更改资料</text>
+    </view>
+    <view class='moreinfo-item' catchtap='navigateToCal'>
+      <image src='../../imgs/calendar.png'></image>
+      <text>恋爱日历</text>
+    </view>
+    <view class='moreinfo-item' catchtap='qrcode'>
+      <image src='../../imgs/QRcode.png'></image>
+      <text>邀请码</text>
+    </view>
+    <view class='moreinfo-item' catchtap='redirectToFeed'>
+      <image src='../../imgs/feedback.png'></image>
+      <text>用户反馈</text>
+    </view>
+    <view class='moreinfo-item' catchtap='navigateToAbout'>
+      <image src='../../imgs/about.png'></image>
+      <text>关于TouchU</text>
+    </view>
+    <view class='moreinfo-item' catchtap='exit'>
+      <image src='../../imgs/exit.png'></image>
+      <text>退出登录</text>
+    </view>
+  </view>
+</view>

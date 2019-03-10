@@ -1,0 +1,68 @@
+<!--pages/write/write.wxml-->
+<view>
+  <view class='topbar'>
+    <text catchtap='redirectToLoveLetter'>取消</text>
+    <text catchtap='redirectToLoveBox'>发送</text>
+  </view>
+  <view class='background' style='background-color:{{bgColor}}'></view>
+  <view class='write-content'>
+    <textarea style="font-size:{{fontSize}};color:{{fontColor}}" auto-focus="true" maxlength='-1' auto-height bindinput='getValue'>
+    </textarea>
+    <view class='imgs-layout'>
+      <view class="imgs" wx:for="{{arrImgs}}" wx:for-item="imgSrc">
+        <image src='{{imgSrc}}' mode="widthFix"></image>
+      </view>
+    </view>
+    <view class='video' hidden="{{isVideoHide}}">
+      <video src="{{videoSrc}}"></video>
+    </view>
+  </view>
+
+  <view class='{{bottomWrapper}}'>
+    <view class='bottom-btns'>
+      <button catchtap='uploadMusic'>
+        <image src='../../imgs/music.png'></image>
+      </button>
+      <button catchtap='edit'>
+        <image src='../../imgs/T.png'></image>
+      </button>
+      <button catchtap='record'>
+        <image src='../../imgs/record.png'></image>
+      </button>
+      <button catchtap='uploadImgs'>
+        <image src='../../imgs/wallpaper.png'></image>
+      </button>
+      <button catchtap='uploadVideo'>
+        <image src='../../imgs/video.png'></image>
+      </button>
+    </view>
+    <view class='edit' hidden='{{isEditHide}}'>
+      <view class='font-size-wrapper'>
+        <text>字号</text>
+        <view class='font-size'>
+          <button data-size="28rpx" catchtap='changeFontSize'>Aa</button>
+          <button data-size="32rpx" catchtap='changeFontSize'>Aa</button>
+          <button data-size="36rpx" catchtap='changeFontSize'>Aa</button>
+          <button data-size="40rpx" catchtap='changeFontSize'>Aa</button>
+          <button data-size="44rpx" catchtap='changeFontSize'>Aa</button>
+        </view>
+      </view>
+      <view class="bg-color-wrapper">
+        <text>背景颜色</text>
+        <scroll-view scroll-x="true" class='bg-color'>
+          <view wx:for="{{arrBgColors}}" wx:for-item="i" class='view-size'>
+            <button style='background-color:{{i}}' data-rgb="{{i}}" catchtap='changeBgColor'></button>
+          </view>
+        </scroll-view>
+      </view>
+      <view class='font-color-wrapper'>
+        <text>字体颜色</text>
+        <scroll-view scroll-x="true" class='font-color'>
+          <view wx:for="{{arrFontColors}}" wx:for-item="j" class='view-size'>
+            <button style='background-color:{{j}}' data-color="{{j}}" catchtap='changeFontColor'></button>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>

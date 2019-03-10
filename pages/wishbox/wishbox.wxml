@@ -1,0 +1,19 @@
+<!--pages/wishbox/wishbox.wxml-->
+<view class='container'>
+  <image class="background" src="{{bgImgSrc}}"></image>
+  <swiper class='wish-box' indicator-dots="true" indicator-active-color="#F8C8CE"   indicator-active-color="#FF8DC3FF" current='0' bindchange='swiperChange'>
+    <block wx:for="{{arrWish}}" wx:for-item="i" wx:for-index="idx" wx:key="id">
+      <swiper-item  wx:if="{{i.wishImgSrc}}}">
+        <view id='wish-box-wrapper'>
+          <view class="wish-box-img {{idx==num?'delete':''}}" data-num="{{idx}}" catchtap='addWishOrDel' >
+            <image src="{{i.wishImgSrc}}" data-num="{{idx}}" mode='widthFix' class="{{idx==num?'order':''}}"></image>
+            <button class="{{idx==num?'del-btn':'hide'}}" data-num="{{idx}}" catchtap='delWish'>删除</button>
+          </view>
+          <view class='wish-box-text'>
+            <text>{{i.wishText}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

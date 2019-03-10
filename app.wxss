@@ -1,0 +1,35 @@
+.background {
+  position: fixed;
+  z-index: -999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topbar{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 0rpx;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background-color: #DDEEFA;
+}
+.topbar text{
+color:#A5794C;
+font-size:38rpx;
+margin:30rpx 34rpx;
+}
+.imgs-layout,.video-layout{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.imgs,.video{
+  width: 90%;
+  text-align: center;
+}
+

@@ -1,0 +1,112 @@
+/* pages/save/save.wxss */
+#container{
+  width: 100%;
+  height: 100%;
+}
+#set-goal-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 580rpx;
+  background-color: rgba(254,174,185,.4);
+}
+#set-goal-wrapper button{
+  background-color: transparent;
+}
+button::after{
+  border: none;
+}
+/* #set-goal-wrapper button:nth-of-type(1){
+  align-self: flex-start;
+  margin-left: 20rpx;
+}
+#set-goal-wrapper button:nth-of-type(1) image{
+  width:46rpx;
+  height: 28rpx;
+}  */
+#set-goal-wrapper button image{
+  width: 200rpx;
+  height: 200rpx;
+  margin-bottom: 84rpx;
+}
+#set-goal-wrapper text{
+  font-size: 46rpx;
+  color: #FFF;
+}
+/* #goal-achievement-wrapper{
+  width: 100%;
+  height: 600rpx;
+  background-color: #FFF;
+} */
+#goal-content-wrapper{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 88%;
+  height: 530rpx;
+  background-color: rgba(254,174,185,.4);
+  padding: 0rpx 6% 48rpx;
+}
+#goal-amount{
+  align-self: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 36%;
+}
+.save-Amount,.achieve-time{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 26%;
+}
+.font{
+  color: #FBF8F8;
+  font-size:34rpx;
+}
+#goal-amount text:nth-of-type(2){
+  color: #FD3604;
+  font-size: 100rpx;
+}
+.save-Amount text:nth-of-type(2){
+  color: #FD3604;
+  font-size: 34rpx;
+}
+.achieve-time text:nth-of-type(2){
+  color: #FD3604;
+  font-size: 34rpx;
+}
+#goal-content-wrapper button{
+  align-self: flex-start;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+button::after{
+  border: none;
+}
+#goal-content-wrapper button image{
+  width: 46rpx;
+  height: 26rpx;
+}
+#encourage-wrapper{
+  width: calc(100% - 100rpx);
+  /* height: calc(100% - 606rpx);  */
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  padding: 0rpx 50rpx 50rpx;
+}
+#encourage-wrapper text{
+  color:#FE6744;
+  font-size: 30rpx;
+  text-indent: 2rem;
+  line-height: 60rpx;
+  margin-bottom: 20rpx;
+}

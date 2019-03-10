@@ -1,0 +1,59 @@
+<!--pages/goal/goal.wxml-->
+<view id="container">
+  <image class="background" src="{{bgImgSrc}}"></image>
+  <view id="fund-wrapper">
+    <view class='main-content'>
+      <view class='target-amount'>
+        <view class='target-amount-top'>
+          <image src='../../imgs/money.png'></image>
+          <text>目标金额</text>
+        </view>
+        <input class="goal-amount" type="number" auto-focus placeholder="输入金额" placeholder-style="font-size:30rpx;color: #FF5E5E;" bindinput='getMoreInfo' />
+      </view>
+      <view class='achieve-time'>
+        <view class='achieve-time-left'>
+          <image src='../../imgs/right.png'></image>
+          <text>完成时间</text>
+        </view>
+        <view class="achieve-time-right">
+          <view class="achieve-time-right-month">
+            <achievetime bind:lessMonth="getLessMonth" bind:moreMonth="getMoreMonth" bind:achieveTime="getAchieveTime" bind:transfer="calcTransfer"></achievetime>
+            <text>个月</text>
+          </view>
+          <text>{{achieveYear}}年{{achieveMonth}}月{{achieveDay}}日预计完成</text>
+        </view>
+      </view>
+      <view class='transfer-accounts'>
+        <view class="{{isWeekTap?'transfer-accounts-left-tap':'transfer-accounts-left'}} fontsize" catchtap='showLastWeekAmount'>
+          <text>每周转入</text>
+          <text>{{weekAmount}}</text>
+          <text hidden='{{isLastWeekHide}}'>最后一周转入{{lastWeekAmount}}元</text>
+        </view>
+        <view class="{{isMonthTap?'transfer-accounts-right-tap':'transfer-accounts-right'}} fontsize" catchtap='showLastMonthAmount'>
+          <text>每月转入</text>
+          <text>{{monthAmount}}</text>
+          <text hidden='{{isLastMonthHide}}'>最后一月转入{{lastMonthAmount}}元</text>
+        </view>
+      </view>
+      <view class='transfer-time'>
+        <view class='transfer-time-left'>
+          <image src='../../imgs/transfertime.png'></image>
+          <text>转入时间</text>
+        </view>
+        <picker bindchange="bindWeekChange" value="{{weekIndex}}" range="{{weekTime}}">
+          <view class="picker" hidden='{{isWeekPickerHide}}'>
+            {{weekTime[weekIndex]}}
+            <image src='../../imgs/more.png '></image>
+          </view>
+        </picker>
+        <picker bindchange="bindMonthChange" value="{{monthIndex}}" range="{{monthTime}}">
+            <view class="picker" hidden='{{isMonthPickerHide}}'>
+            {{monthTime[monthIndex]}}
+            <image src='../../imgs/more.png '></image>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <button class='confirm' catchtap='navigateToSave'>确认</button>
+</view>

@@ -1,0 +1,34 @@
+/* pages/loveletter/loveletter.wxss */
+.container{
+  width: 100%;
+  height: 100%；
+}
+.container button{
+  flex-basis: 50%;
+  display:inline-flex;
+  flex-direction:column;
+  width:100%;
+  height:50%;
+  background:rgba(243,242,242,.3);
+  justify-content:space-around;
+  align-items:center;
+  margin-bottom:10rpx;
+  padding: 114rpx 0;
+}
+.container button:nth-of-type(1) image{
+  width:175rpx;
+  height: 177rpx;
+}
+
+.container button:nth-of-type(2) image{
+  width:133rpx;
+  height: 191rpx;
+}
+.container button text{
+  color: #A5794C;
+  font-size: 44rpx;
+  margin-top:70rpx;
+}
+.container button::after{
+  border: none;
+}

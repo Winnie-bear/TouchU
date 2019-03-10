@@ -1,0 +1,17 @@
+<!--pages/timedetail/timedetail.wxml-->
+<view id="detail-wrapper">
+  <image class="background" src="{{bgImgSrc}}"></image>
+  <view class='top'>
+    <text>详情</text>
+  </view>
+  <view id='detail'>
+    <text>李宇春真是太好看了！李宇春真是太好看了！李宇春真是太好看了！李宇春真是太好看了！李宇春真是太好看了！李宇春真是太好看了！</text>
+    <view class='imgs-layout'>
+      <!-- <view class='imgs' wx:for="{{}}"> -->
+        <image src='../../imgs/YY.jpg'></image>
+      <!-- </view> -->
+    </view>
+    <text>{{year}}-{{month}}-{{day}}</text>
+    <text>{{hour}}:{{minutes}}</text>
+  </view>
+</view>

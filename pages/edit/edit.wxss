@@ -1,0 +1,71 @@
+/* pages/edit/edit.wxss */
+.location{
+  position: relative;
+  top: 824rpx;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.location image{
+  width: 50rpx;
+  height: 60rpx;
+  margin-left: 35rpx;
+}
+.location text{
+  font-size: 22rpx;
+  color: #D9BAC6;
+  margin-left: 16rpx;
+}
+.bottom-add-bar{
+  width: 100%;
+  height: 180rpx;
+  position: relative;
+  top: 820rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.bottom-add-bar button{
+  width: 104rpx;
+  height: 104rpx;
+  background-color: #F0EFEF;
+  color: #E5C5CC;
+  font-size: 60rpx;
+  line-height: 104rpx;
+  padding: 0rpx;
+  margin: 0rpx 0rpx 0rpx 30rpx;
+}
+.bottom-add-bar button::after{
+  border: none;
+}
+.bottom-add-bar button image{
+  width: 104rpx;
+  height: 104rpx;
+}
+hr{
+  position: relative;
+  top: 824rpx;
+  display: block;
+  width: 100%;
+  height: 4rpx;
+  background-color: #E5C4CD;
+}
+textarea{
+  width: 100%;
+}
+camera{
+  width: 90%;
+  margin: 20rpx auto;
+  height: 480rpx;
+}
+.img-show{
+  display: block;
+  width: 90%;
+  margin: 20rpx auto;
+  height: 480rpx;
+}
+.imgs image{
+  max-height: 800rpx;
+}

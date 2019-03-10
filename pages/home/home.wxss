@@ -1,0 +1,42 @@
+ .container {
+  width: 100vw;
+  height: 100vh;
+} 
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30rpx;
+}
+.row{
+  width: 80vw;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .4);
+  box-shadow: 0px 0px 20px 8px rgba(0,0,0,.12);
+  border-radius:40rpx;
+  margin-bottom: 20rpx;
+}
+.row button{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.row image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.row  text{
+  font-size: 30rpx;
+  color:#a5794c;
+}
+button{
+  background:none;
+}
+button::after{
+  border: none;
+}

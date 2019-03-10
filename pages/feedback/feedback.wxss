@@ -1,0 +1,10 @@
+/* pages/feedback/feedback.wxss */
+#text-wrapper{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  padding: 20rpx 0;
+}
+textarea{
+  width: 90%;
+}

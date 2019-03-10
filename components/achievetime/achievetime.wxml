@@ -1,0 +1,6 @@
+<!--components/achieveTime/achieveTime.wxml-->
+<achievetime>
+    <button bindtap='_reduce' class='reduce-btn'>-</button>
+    <view class='month-display-box'>{{month}}</view>
+    <button bindtap='_add' class='add-btn'>+</button>
+</achievetime>

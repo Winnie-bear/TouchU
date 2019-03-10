@@ -1,0 +1,111 @@
+/* pages/write/write.wxss */
+.bottom-btns{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 116rpx;
+  background-color: #EFD2D7;
+}
+.bottom-btns button{
+  background-color: transparent;
+}
+.bottom-btns button image{
+  width: 57rpx;
+  height:57rpx; 
+  vertical-align:middle;
+}
+.bottom-btns button::after{
+  border: none;
+}
+.write-content{
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding:20rpx 0rpx;
+}
+.write-content textarea{
+  width: 100%;
+  height: 100%;
+}
+ .write-content video{
+  width: 100%;
+  margin-bottom: 20rpx;
+} 
+.edit{
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EFD2D7;
+}
+ .edit button{
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+} 
+.edit text{
+  flex-basis: 20%;
+  font-size: 28rpx;
+  color: #FFF;
+}
+.font-size-wrapper,.font-size{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.font-size button:nth-of-type(1){
+  font-size: 28rpx;
+} 
+.font-size button:nth-of-type(2){
+  font-size: 32rpx;
+} 
+.font-size button:nth-of-type(3){
+  font-size: 36rpx;
+} 
+.font-size button:nth-of-type(4){
+  font-size: 40rpx;
+} 
+.font-size button:nth-of-type(5){
+  font-size: 44rpx;
+} 
+scroll-view{
+  white-space: nowrap;
+  width: 77%;
+}
+.bg-color-wrapper,.font-color-wrapper{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.view-size{
+  display: inline-block;
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.hide-edit-bottom-wrapper{
+  position:relative;
+  top:920rpx;
+  left:0;
+}
+.bottom-wrapper{
+  position:relative;
+  top:520rpx;
+  left:0;
+}
+#bgAudio{
+  width: 300rpx;
+  height: 200rpx;
+  background: red;
+}
+.imgs image{
+  max-height: 700rpx;
+}
